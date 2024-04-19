@@ -29,3 +29,9 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: mvn -B clean test --file pom.xml
+
+    - name: Save Extent Report as Artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: extent-report
+        path: System.getProperty("user.dir")+"\\test-output\\ExtentReports\\extentReport.html
