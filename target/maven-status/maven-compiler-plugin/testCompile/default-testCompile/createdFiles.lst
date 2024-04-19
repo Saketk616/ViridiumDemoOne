@@ -1,0 +1,4 @@
+com\viridium\qa\pages\ProjectDashboardPage.class
+com\viridium\qa\tests\TestCases.class
+com\viridium\qa\base\BaseClass.class
+com\viridium\qa\pages\LoginPage.class

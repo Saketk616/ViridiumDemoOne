@@ -6,7 +6,12 @@
       <class name="com.viridium.qa.tests.TestCases">
         <methods>
           <include name="login"/>
+          <include name="checkCarbonEmissionMenuVisible"/>
+          <include name="teardown"/>
+          <include name="checkProductProfitabilityMenuVisible"/>
+          <include name="checkPFASCHemicalsMenuVisible"/>
           <include name="openBrowserCreateProject"/>
+          <include name="checkRegulatoryReportsMenuVisible"/>
         </methods>
       </class> <!-- com.viridium.qa.tests.TestCases -->
     </classes>
