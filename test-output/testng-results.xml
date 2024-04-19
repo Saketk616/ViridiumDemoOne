@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-04-19T12:09:43 IST" name="Suite_demo" finished-at="2024-04-19T12:10:45 IST" duration-ms="61674">
+    <groups>
+    </groups>
+    <test started-at="2024-04-19T12:09:43 IST" name="Test1" finished-at="2024-04-19T12:10:24 IST" duration-ms="41049">
+      <class name="com.viridium.qa.tests.TestCases">
+        <test-method is-config="true" signature="openBrowserCreateProject(java.lang.String)[pri:0, instance:com.viridium.qa.tests.TestCases@3270d194]" started-at="2024-04-19T12:09:43 IST" name="openBrowserCreateProject" finished-at="2024-04-19T12:10:21 IST" duration-ms="37906" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowserCreateProject -->
+        <test-method signature="login()[pri:0, instance:com.viridium.qa.tests.TestCases@3270d194]" started-at="2024-04-19T12:10:21 IST" name="login" finished-at="2024-04-19T12:10:24 IST" duration-ms="2926" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.viridium.qa.tests.TestCases@3270d194]" started-at="2024-04-19T12:10:24 IST" name="teardown" finished-at="2024-04-19T12:10:24 IST" duration-ms="188" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.viridium.qa.tests.TestCases -->
+    </test> <!-- Test1 -->
+    <test started-at="2024-04-19T12:10:24 IST" name="Test2" finished-at="2024-04-19T12:10:45 IST" duration-ms="20576">
+      <class name="com.viridium.qa.tests.TestCases">
+        <test-method is-config="true" signature="openBrowserCreateProject(java.lang.String)[pri:0, instance:com.viridium.qa.tests.TestCases@4c12331b]" started-at="2024-04-19T12:10:24 IST" name="openBrowserCreateProject" finished-at="2024-04-19T12:10:42 IST" duration-ms="17374" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowserCreateProject -->
+        <test-method signature="login()[pri:0, instance:com.viridium.qa.tests.TestCases@4c12331b]" started-at="2024-04-19T12:10:42 IST" name="login" finished-at="2024-04-19T12:10:45 IST" duration-ms="2924" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.viridium.qa.tests.TestCases@4c12331b]" started-at="2024-04-19T12:10:45 IST" name="teardown" finished-at="2024-04-19T12:10:45 IST" duration-ms="269" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.viridium.qa.tests.TestCases -->
+    </test> <!-- Test2 -->
+  </suite> <!-- Suite_demo -->
+</testng-results>
