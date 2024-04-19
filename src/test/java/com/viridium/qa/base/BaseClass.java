@@ -22,8 +22,9 @@ public class BaseClass {
 	public static WebDriver driver;
 	public static WebDriverWait wait;
 	Actions act;
-	String url="https://kb-dev-ui.azurewebsites.net/#";
+	public static String url="https://kb-dev-ui.azurewebsites.net/#";
 	public ProjectDashboardPage projectDashboard;
+	public static String browser;
 	
 	public WebDriver intializeBrowserAndOpenApplicationURL(String browserName) {
 		if(browserName.equalsIgnoreCase("chrome")) {
@@ -63,6 +64,7 @@ public class BaseClass {
 	@Parameters("browser_name")
 	public void openBrowserCreateProject(String browser_name) {
 //		String browser_name="chrome";
+		browser=browser_name;
 		
 		try {
 			driver=intializeBrowserAndOpenApplicationURL(browser_name);
