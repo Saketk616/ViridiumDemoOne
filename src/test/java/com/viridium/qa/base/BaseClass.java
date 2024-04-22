@@ -11,11 +11,15 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Parameters;
 
+import com.aventstack.extentreports.ExtentReports;
 import com.viridium.qa.pages.LoginPage;
 import com.viridium.qa.pages.ProjectDashboardPage;
+import com.viridium.qa.utils.ExtentReporter;
 
 public class BaseClass {
 	
@@ -25,6 +29,7 @@ public class BaseClass {
 	public static String url="https://kb-dev-ui.azurewebsites.net/#";
 	public ProjectDashboardPage projectDashboard;
 	public static String browser;
+	public static ExtentReports extentReport;
 	
 	public WebDriver intializeBrowserAndOpenApplicationURL(String browserName) {
 		if(browserName.equalsIgnoreCase("chrome")) {
@@ -42,13 +47,12 @@ public class BaseClass {
 		else if(browserName.equalsIgnoreCase("headlesschrome")) {
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("--headless=new");
-			options.addArguments("window-size=1552,832");
 			driver = new ChromeDriver(options);
 		}
 		else {
 			System.out.println("Please enter correct browser name");
 		}
-
+		browser=getBrowserName(driver);
 		driver.manage().window().maximize();
 		System.out.println("Window size: "+driver.manage().window().getSize());
 		driver.manage().deleteAllCookies();
@@ -64,7 +68,7 @@ public class BaseClass {
 	@Parameters("browser_name")
 	public void openBrowserCreateProject(String browser_name) {
 //		String browser_name="chrome";
-		browser=browser_name;
+		
 		
 		try {
 			driver=intializeBrowserAndOpenApplicationURL(browser_name);
@@ -80,5 +84,33 @@ public class BaseClass {
 	public void teardown() {
 		driver.quit();
 	}
+	
+	public static String getBrowserName(WebDriver driver) {
+        if (driver instanceof ChromeDriver) {
+            return "Chrome";
+        } else if (driver instanceof FirefoxDriver) {
+            return "Firefox";
+        } else if (driver instanceof SafariDriver) {
+            return "Safari";
+        } else if (driver instanceof EdgeDriver) {
+            return "Edge";
+        } else {
+            return "Unknown";
+        }
+    }
+	
+	@BeforeSuite
+	public static void startExtentReporter() {
+		extentReport =ExtentReporter.generateExtentReport();
+		System.out.println("Created report");
+		
+	}
+	
+	@AfterSuite
+	public static void closeExtentReporter() {
+		extentReport.flush();
+		System.out.println("Flushed report");
+	}
+
 
 }

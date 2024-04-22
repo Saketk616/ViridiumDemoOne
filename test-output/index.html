@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite_demo" class="navigator-link">
-              <span class="suite-name border-passed">Suite_demo</span>
+              <span class="suite-name border-failed">Suite_demo</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">10 methods,   10 passed</span>
+                    <span class="method-stats">10 methods, 2 failed,   8 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite_demo" class="hide-methods failed suite-Suite_demo"> (hide)</a> <!-- hide-methods failed suite-Suite_demo -->
+                      <a href="#" panel-name="suite-Suite_demo" class="show-methods failed suite-Suite_demo"> (show)</a> <!-- show-methods failed suite-Suite_demo -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite_demo">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite_demo" title="com.viridium.qa.tests.TestCases" class="method navigator-link" hash-for-method="checkPFASCHemicalsMenuVisible">checkPFASCHemicalsMenuVisible</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite_demo" title="com.viridium.qa.tests.TestCases" class="method navigator-link" hash-for-method="checkPFASCHemicalsMenuVisible">checkPFASCHemicalsMenuVisible</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite_demo -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -109,16 +128,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite_demo" title="com.viridium.qa.tests.TestCases" class="method navigator-link" hash-for-method="checkCarbonEmissionMenuVisible">checkCarbonEmissionMenuVisible</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite_demo" title="com.viridium.qa.tests.TestCases" class="method navigator-link" hash-for-method="checkPFASCHemicalsMenuVisible">checkPFASCHemicalsMenuVisible</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite_demo" title="com.viridium.qa.tests.TestCases" class="method navigator-link" hash-for-method="checkPFASCHemicalsMenuVisible">checkPFASCHemicalsMenuVisible</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -163,6 +172,38 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite_demo" class="panel Suite_demo">
+          <div class="suite-Suite_demo-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.viridium.qa.tests.TestCases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkPFASCHemicalsMenuVisible">
+                  </a> <!-- checkPFASCHemicalsMenuVisible -->
+                  <span class="method-name">checkPFASCHemicalsMenuVisible</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [false] but found [true]
+	at com.viridium.qa.tests.TestCases.checkPFASCHemicalsMenuVisible(TestCases.java:45)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkPFASCHemicalsMenuVisible">
+                  </a> <!-- checkPFASCHemicalsMenuVisible -->
+                  <span class="method-name">checkPFASCHemicalsMenuVisible</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [false] but found [true]
+	at com.viridium.qa.tests.TestCases.checkPFASCHemicalsMenuVisible(TestCases.java:45)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite_demo-class-failed -->
           <div class="suite-Suite_demo-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -181,20 +222,6 @@
                   <a name="checkCarbonEmissionMenuVisible">
                   </a> <!-- checkCarbonEmissionMenuVisible -->
                   <span class="method-name">checkCarbonEmissionMenuVisible</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="checkPFASCHemicalsMenuVisible">
-                  </a> <!-- checkPFASCHemicalsMenuVisible -->
-                  <span class="method-name">checkPFASCHemicalsMenuVisible</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="checkPFASCHemicalsMenuVisible">
-                  </a> <!-- checkPFASCHemicalsMenuVisible -->
-                  <span class="method-name">checkPFASCHemicalsMenuVisible</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -310,48 +337,48 @@ data.addRows(10);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'login')
 data.setCell(0, 2, 'com.viridium.qa.tests.TestCases')
-data.setCell(0, 3, 3359);
+data.setCell(0, 3, 4602);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'login')
 data.setCell(1, 2, 'com.viridium.qa.tests.TestCases')
-data.setCell(1, 3, 3022);
+data.setCell(1, 3, 3582);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'checkProductProfitabilityMenuVisible')
+data.setCell(2, 1, 'checkRegulatoryReportsMenuVisible')
 data.setCell(2, 2, 'com.viridium.qa.tests.TestCases')
-data.setCell(2, 3, 396);
+data.setCell(2, 3, 2105);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'checkProductProfitabilityMenuVisible')
 data.setCell(3, 2, 'com.viridium.qa.tests.TestCases')
-data.setCell(3, 3, 305);
+data.setCell(3, 3, 2058);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'checkPFASCHemicalsMenuVisible')
+data.setCell(4, 1, 'checkProductProfitabilityMenuVisible')
 data.setCell(4, 2, 'com.viridium.qa.tests.TestCases')
-data.setCell(4, 3, 73);
+data.setCell(4, 3, 2054);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'checkPFASCHemicalsMenuVisible')
+data.setCell(5, 1, 'checkCarbonEmissionMenuVisible')
 data.setCell(5, 2, 'com.viridium.qa.tests.TestCases')
-data.setCell(5, 3, 63);
+data.setCell(5, 3, 2051);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'checkCarbonEmissionMenuVisible')
 data.setCell(6, 2, 'com.viridium.qa.tests.TestCases')
-data.setCell(6, 3, 61);
+data.setCell(6, 3, 2044);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'checkRegulatoryReportsMenuVisible')
+data.setCell(7, 1, 'checkPFASCHemicalsMenuVisible')
 data.setCell(7, 2, 'com.viridium.qa.tests.TestCases')
-data.setCell(7, 3, 61);
+data.setCell(7, 3, 2043);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'checkRegulatoryReportsMenuVisible')
 data.setCell(8, 2, 'com.viridium.qa.tests.TestCases')
-data.setCell(8, 3, 57);
+data.setCell(8, 3, 2037);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'checkCarbonEmissionMenuVisible')
+data.setCell(9, 1, 'checkPFASCHemicalsMenuVisible')
 data.setCell(9, 2, 'com.viridium.qa.tests.TestCases')
-data.setCell(9, 3, 45);
+data.setCell(9, 3, 2036);
 window.suiteTableData['Suite_demo']= { tableData: data, tableDiv: 'times-div-Suite_demo'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 7 seconds</span>
+              <span class="suite-total-time">Total running time: 24 seconds</span>
               <div id="times-div-Suite_demo">
               </div> <!-- times-div-Suite_demo -->
             </div> <!-- times-div -->
@@ -378,62 +405,114 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">com.viridium.qa.tests.TestCases</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">startExtentReporter</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">openBrowserCreateProject(chrome)</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">423 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">login</span>
-                <span class="method-start">16887 ms</span>
+                <span class="method-start">25969 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">25969 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">checkProductProfitabilityMenuVisible</span>
-                <span class="method-start">20247 ms</span>
+                <span class="method-start">30575 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">30575 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">32633 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">checkCarbonEmissionMenuVisible</span>
-                <span class="method-start">20552 ms</span>
+                <span class="method-start">32633 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">34684 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">checkPFASCHemicalsMenuVisible</span>
-                <span class="method-start">20598 ms</span>
+                <span class="method-start">34684 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">36882 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">checkRegulatoryReportsMenuVisible</span>
-                <span class="method-start">20661 ms</span>
+                <span class="method-start">36882 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">20733 ms</span>
+                <span class="method-start">38995 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-class before">
                 <span class="method-name">openBrowserCreateProject(edge)</span>
-                <span class="method-start">21330 ms</span>
+                <span class="method-start">39282 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">login</span>
-                <span class="method-start">37341 ms</span>
+                <span class="method-start">74253 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">74253 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">77835 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">checkProductProfitabilityMenuVisible</span>
-                <span class="method-start">40364 ms</span>
+                <span class="method-start">77835 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">79889 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">checkCarbonEmissionMenuVisible</span>
-                <span class="method-start">40760 ms</span>
+                <span class="method-start">79889 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">checkPFASCHemicalsMenuVisible</span>
-                <span class="method-start">40823 ms</span>
+                <span class="method-start">81949 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">81949 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">checkRegulatoryReportsMenuVisible</span>
-                <span class="method-start">40896 ms</span>
+                <span class="method-start">84114 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">84114 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">40957 ms</span>
+                <span class="method-start">86151 ms</span>
               </div> <!-- configuration-class after -->
+              <div class="configuration-suite after">
+                <span class="method-name">closeExtentReporter</span>
+                <span class="method-start">86448 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

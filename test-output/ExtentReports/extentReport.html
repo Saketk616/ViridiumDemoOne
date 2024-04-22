@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>GESSA Automation</title>
+<title>Viridium Automation</title>
 <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
 <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
 <link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
@@ -32,10 +32,10 @@
 </ul>
 <ul class="nav-right">
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">GESSA Automation Test Results</span></a>
+<a href="#"><span class="badge badge-primary">Viridium Automation Test Results</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">19/04/2024 03:49:34</span></a>
+<a href="#"><span class="badge badge-primary">22/04/2024 07:03:16</span></a>
 </li>
 </ul>
 </div>
@@ -45,6 +45,11 @@
 <li class="nav-item dropdown" onclick="toggleView('test-view')">
 <a id="nav-test" class="dropdown-toggle" href="#">
 <span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
 </a>
 </li>
 <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
@@ -67,6 +72,7 @@
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
 <a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -74,14 +80,14 @@
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="pass" test-id="6"
+        <li class="test-item"  status="pass" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">login</p>
+            <p class="name">login Chrome</p>
             <p class="text-sm">
-              <span>3:49:50 pm</span> / <span>00:00:03:022</span>
+              <span>7:03:42 pm</span> / <span>00:00:04:594</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -89,10 +95,291 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">login</h5>
-<span class='badge badge-success'>04.19.2024 3:49:50 pm</span>
-<span class='badge badge-danger'>04.19.2024 3:49:53 pm</span>
-<span class='badge badge-default'>00:00:03:022</span>
+<h5 class="test-status text-pass">login Chrome</h5>
+<span class='badge badge-success'>04.22.2024 7:03:42 pm</span>
+<span class='badge badge-danger'>04.22.2024 7:03:46 pm</span>
+<span class='badge badge-default'>00:00:04:594</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:03:42 pm</td>
+        <td>
+          login Chrome started executing
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:03:46 pm</td>
+        <td>
+          login Chrome got successfully executed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="2"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">checkProductProfitabilityMenuVisible Chrome</p>
+            <p class="text-sm">
+              <span>7:03:46 pm</span> / <span>00:00:02:058</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">checkProductProfitabilityMenuVisible Chrome</h5>
+<span class='badge badge-success'>04.22.2024 7:03:46 pm</span>
+<span class='badge badge-danger'>04.22.2024 7:03:48 pm</span>
+<span class='badge badge-default'>00:00:02:058</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:03:46 pm</td>
+        <td>
+          checkProductProfitabilityMenuVisible Chrome started executing
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:03:48 pm</td>
+        <td>
+          checkProductProfitabilityMenuVisible Chrome got successfully executed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="3"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">checkCarbonEmissionMenuVisible Chrome</p>
+            <p class="text-sm">
+              <span>7:03:48 pm</span> / <span>00:00:02:051</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">checkCarbonEmissionMenuVisible Chrome</h5>
+<span class='badge badge-success'>04.22.2024 7:03:48 pm</span>
+<span class='badge badge-danger'>04.22.2024 7:03:50 pm</span>
+<span class='badge badge-default'>00:00:02:051</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:03:48 pm</td>
+        <td>
+          checkCarbonEmissionMenuVisible Chrome started executing
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:03:50 pm</td>
+        <td>
+          checkCarbonEmissionMenuVisible Chrome got successfully executed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="4"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">checkPFASCHemicalsMenuVisible Chrome</p>
+            <p class="text-sm">
+              <span>7:03:50 pm</span> / <span>00:00:02:198</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">checkPFASCHemicalsMenuVisible Chrome</h5>
+<span class='badge badge-success'>04.22.2024 7:03:50 pm</span>
+<span class='badge badge-danger'>04.22.2024 7:03:52 pm</span>
+<span class='badge badge-default'>00:00:02:198</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\SetUps\Viridium_demo\Viridium_demo1\Screenshots\checkPFASCHemicalsMenuVisible Chrome.png' src="C:\SetUps\Viridium_demo\Viridium_demo1\Screenshots\checkPFASCHemicalsMenuVisible Chrome.png">
+    
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:03:50 pm</td>
+        <td>
+          checkPFASCHemicalsMenuVisible Chrome started executing
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:03:52 pm</td>
+        <td>
+          <textarea readonly class="code-block">java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertFalse(Assert.java:78)
+	at org.testng.Assert.assertFalse(Assert.java:88)
+	at com.viridium.qa.tests.TestCases.checkPFASCHemicalsMenuVisible(TestCases.java:45)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</textarea>
+          
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>7:03:52 pm</td>
+        <td>
+          checkPFASCHemicalsMenuVisible Chrome got failed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="5"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">checkRegulatoryReportsMenuVisible Chrome</p>
+            <p class="text-sm">
+              <span>7:03:52 pm</span> / <span>00:00:02:105</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">checkRegulatoryReportsMenuVisible Chrome</h5>
+<span class='badge badge-success'>04.22.2024 7:03:52 pm</span>
+<span class='badge badge-danger'>04.22.2024 7:03:55 pm</span>
+<span class='badge badge-default'>00:00:02:105</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:03:52 pm</td>
+        <td>
+          checkRegulatoryReportsMenuVisible Chrome started executing
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:03:55 pm</td>
+        <td>
+          checkRegulatoryReportsMenuVisible Chrome got successfully executed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="6"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">login Edge</p>
+            <p class="text-sm">
+              <span>7:04:30 pm</span> / <span>00:00:03:582</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">login Edge</h5>
+<span class='badge badge-success'>04.22.2024 7:04:30 pm</span>
+<span class='badge badge-danger'>04.22.2024 7:04:33 pm</span>
+<span class='badge badge-default'>00:00:03:582</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -104,16 +391,16 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>3:49:50 pm</td>
+        <td>7:04:30 pm</td>
         <td>
-          login started executing
+          login Edge started executing
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:49:53 pm</td>
+        <td>7:04:33 pm</td>
         <td>
-          login got successfully executed
+          login Edge got successfully executed
         </td>
       </tr>
   </tbody>
@@ -126,9 +413,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">checkProductProfitabilityMenuVisible</p>
+            <p class="name">checkProductProfitabilityMenuVisible Edge</p>
             <p class="text-sm">
-              <span>3:49:53 pm</span> / <span>00:00:00:396</span>
+              <span>7:04:33 pm</span> / <span>00:00:02:054</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -136,10 +423,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">checkProductProfitabilityMenuVisible</h5>
-<span class='badge badge-success'>04.19.2024 3:49:53 pm</span>
-<span class='badge badge-danger'>04.19.2024 3:49:53 pm</span>
-<span class='badge badge-default'>00:00:00:396</span>
+<h5 class="test-status text-pass">checkProductProfitabilityMenuVisible Edge</h5>
+<span class='badge badge-success'>04.22.2024 7:04:33 pm</span>
+<span class='badge badge-danger'>04.22.2024 7:04:35 pm</span>
+<span class='badge badge-default'>00:00:02:054</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -151,16 +438,16 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>3:49:53 pm</td>
+        <td>7:04:33 pm</td>
         <td>
-          checkProductProfitabilityMenuVisible started executing
+          checkProductProfitabilityMenuVisible Edge started executing
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:49:53 pm</td>
+        <td>7:04:35 pm</td>
         <td>
-          checkProductProfitabilityMenuVisible got successfully executed
+          checkProductProfitabilityMenuVisible Edge got successfully executed
         </td>
       </tr>
   </tbody>
@@ -173,9 +460,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">checkCarbonEmissionMenuVisible</p>
+            <p class="name">checkCarbonEmissionMenuVisible Edge</p>
             <p class="text-sm">
-              <span>3:49:53 pm</span> / <span>00:00:00:062</span>
+              <span>7:04:35 pm</span> / <span>00:00:02:044</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -183,10 +470,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">checkCarbonEmissionMenuVisible</h5>
-<span class='badge badge-success'>04.19.2024 3:49:53 pm</span>
-<span class='badge badge-danger'>04.19.2024 3:49:53 pm</span>
-<span class='badge badge-default'>00:00:00:062</span>
+<h5 class="test-status text-pass">checkCarbonEmissionMenuVisible Edge</h5>
+<span class='badge badge-success'>04.22.2024 7:04:35 pm</span>
+<span class='badge badge-danger'>04.22.2024 7:04:38 pm</span>
+<span class='badge badge-default'>00:00:02:044</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -198,16 +485,16 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>3:49:53 pm</td>
+        <td>7:04:35 pm</td>
         <td>
-          checkCarbonEmissionMenuVisible started executing
+          checkCarbonEmissionMenuVisible Edge started executing
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:49:53 pm</td>
+        <td>7:04:38 pm</td>
         <td>
-          checkCarbonEmissionMenuVisible got successfully executed
+          checkCarbonEmissionMenuVisible Edge got successfully executed
         </td>
       </tr>
   </tbody>
@@ -215,46 +502,92 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="9"
+        <li class="test-item"  status="fail" test-id="9"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">checkPFASCHemicalsMenuVisible</p>
+            <p class="name">checkPFASCHemicalsMenuVisible Edge</p>
             <p class="text-sm">
-              <span>3:49:53 pm</span> / <span>00:00:00:072</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>7:04:38 pm</span> / <span>00:00:02:164</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">checkPFASCHemicalsMenuVisible</h5>
-<span class='badge badge-success'>04.19.2024 3:49:53 pm</span>
-<span class='badge badge-danger'>04.19.2024 3:49:53 pm</span>
-<span class='badge badge-default'>00:00:00:072</span>
+<h5 class="test-status text-fail">checkPFASCHemicalsMenuVisible Edge</h5>
+<span class='badge badge-success'>04.22.2024 7:04:38 pm</span>
+<span class='badge badge-danger'>04.22.2024 7:04:40 pm</span>
+<span class='badge badge-default'>00:00:02:164</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
 </div>
-</div><div class="detail-body mt-4">
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\SetUps\Viridium_demo\Viridium_demo1\Screenshots\checkPFASCHemicalsMenuVisible Edge.png' src="C:\SetUps\Viridium_demo\Viridium_demo1\Screenshots\checkPFASCHemicalsMenuVisible Edge.png">
+    
+    </div></div>
+<div class="detail-body mt-4">
 <table class="table table-sm">
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>3:49:53 pm</td>
+        <td>7:04:38 pm</td>
         <td>
-          checkPFASCHemicalsMenuVisible started executing
+          checkPFASCHemicalsMenuVisible Edge started executing
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:49:53 pm</td>
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:04:40 pm</td>
         <td>
-          checkPFASCHemicalsMenuVisible got successfully executed
+          <textarea readonly class="code-block">java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertFalse(Assert.java:78)
+	at org.testng.Assert.assertFalse(Assert.java:88)
+	at com.viridium.qa.tests.TestCases.checkPFASCHemicalsMenuVisible(TestCases.java:45)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</textarea>
+          
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>7:04:40 pm</td>
+        <td>
+          checkPFASCHemicalsMenuVisible Edge got failed
         </td>
       </tr>
   </tbody>
@@ -267,9 +600,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">checkRegulatoryReportsMenuVisible</p>
+            <p class="name">checkRegulatoryReportsMenuVisible Edge</p>
             <p class="text-sm">
-              <span>3:49:53 pm</span> / <span>00:00:00:061</span>
+              <span>7:04:40 pm</span> / <span>00:00:02:037</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -277,10 +610,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">checkRegulatoryReportsMenuVisible</h5>
-<span class='badge badge-success'>04.19.2024 3:49:53 pm</span>
-<span class='badge badge-danger'>04.19.2024 3:49:53 pm</span>
-<span class='badge badge-default'>00:00:00:061</span>
+<h5 class="test-status text-pass">checkRegulatoryReportsMenuVisible Edge</h5>
+<span class='badge badge-success'>04.22.2024 7:04:40 pm</span>
+<span class='badge badge-danger'>04.22.2024 7:04:42 pm</span>
+<span class='badge badge-default'>00:00:02:037</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -292,16 +625,16 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>3:49:53 pm</td>
+        <td>7:04:40 pm</td>
         <td>
-          checkRegulatoryReportsMenuVisible started executing
+          checkRegulatoryReportsMenuVisible Edge started executing
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:49:53 pm</td>
+        <td>7:04:42 pm</td>
         <td>
-          checkRegulatoryReportsMenuVisible got successfully executed
+          checkRegulatoryReportsMenuVisible Edge got successfully executed
         </td>
       </tr>
   </tbody>
@@ -318,30 +651,86 @@
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-<div class="container-fluid p-4 view dashboard-view">
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>2</span>
+</span>
+<p class="name">java.lang.AssertionError</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:03:50 pm</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>checkPFASCHemicalsMenuVisible Chrome</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:04:38 pm</td>
+<td>
+<a href="#" class="linked" test-id='9' id='9'>checkPFASCHemicalsMenuVisible Edge</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
 <div class="row">
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>19/04/2024 03:49:34</h3>
+<h3>22/04/2024 07:03:16</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>19/04/2024 03:49:54</h3>
+<h3>22/04/2024 07:04:42</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>5</h3>
+<h3>8</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Tests Failed</p>
-<h3>0</h3>
+<h3>2</h3>
 </div></div>
 </div>
 </div>
@@ -357,12 +746,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'>
-<b>5</b> tests passed
+<div><small data-tooltip='80%'>
+<b>8</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='0%'><b>0</b> tests failed,
+<small data-tooltip='20%'><b>2</b> tests failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -380,10 +769,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='50%'><b>5</b> events passed</small></div>
+<div><small data-tooltip='36%'><b>8</b> events passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> events failed,
-<b data-tooltip='%'>5</b> others
+<small data-tooltip='9%'><b>2</b> events failed,
+<b data-tooltip='%'>12</b> others
 </small>
 </div>
 </div>
@@ -399,7 +788,7 @@
 </div></div>
 <script>
 var timeline = {
-"login":3.022,"checkProductProfitabilityMenuVisible":0.396,"checkCarbonEmissionMenuVisible":0.062,"checkPFASCHemicalsMenuVisible":0.072,"checkRegulatoryReportsMenuVisible":0.061
+"login Chrome":4.594,"checkProductProfitabilityMenuVisible Chrome":2.058,"checkCarbonEmissionMenuVisible Chrome":2.051,"checkPFASCHemicalsMenuVisible Chrome":2.198,"checkRegulatoryReportsMenuVisible Chrome":2.105,"login Edge":3.582,"checkProductProfitabilityMenuVisible Edge":2.054,"checkCarbonEmissionMenuVisible Edge":2.044,"checkPFASCHemicalsMenuVisible Edge":2.164,"checkRegulatoryReportsMenuVisible Edge":2.037
 };
 </script>
 <div class="row">
@@ -415,7 +804,7 @@ var timeline = {
 </tr>
 <tr>
 <td>Browser Name: </td>
-<td>chrome</td>
+<td></td>
 </tr>
 <tr>
 <td>Operation System: </td>
@@ -438,8 +827,8 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 5,
-failParent: 0,
+passParent: 8,
+failParent: 2,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
@@ -455,11 +844,11 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 5,
-failEvents: 0,
+passEvents: 8,
+failEvents: 2,
 warningEvents: 0,
 skipEvents: 0,
-infoEvents: 5
+infoEvents: 12
 };
 </script>        </div>
       </div>

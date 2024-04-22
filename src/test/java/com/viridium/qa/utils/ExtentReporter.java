@@ -16,8 +16,8 @@ public static ExtentReports generateExtentReport() {
 		ExtentSparkReporter sparkReporter = new ExtentSparkReporter(extentReportFile);
 		
 		sparkReporter.config().setTheme(Theme.DARK);
-		sparkReporter.config().setReportName("GESSA Automation Test Results");
-		sparkReporter.config().setDocumentTitle("GESSA Automation");
+		sparkReporter.config().setReportName("Viridium Automation Test Results");
+		sparkReporter.config().setDocumentTitle("Viridium Automation");
 		sparkReporter.config().setTimeStampFormat("dd/MM/yyyy hh:mm:ss");
 		
 		extentReport.attachReporter(sparkReporter);
