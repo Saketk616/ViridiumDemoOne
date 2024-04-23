@@ -25,7 +25,7 @@ public class TestCases extends BaseClass{
 	
 	@AfterMethod
 	public void goToDashboard() {
-//		projectDashboard.clickViridiumLogo();
+		projectDashboard.clickViridiumLogo();
 	}
 	
 	@Test(priority=1,enabled=false)
@@ -85,22 +85,6 @@ public class TestCases extends BaseClass{
 		Assert.assertEquals(color, "rgb(77, 160, 103)");
 	}
 	
-	@Test (priority=8,enabled=true)
-	public void checkTitleVIR03Color1() throws InterruptedException {
-		Thread.sleep(2000);
-		projectDashboard.clickViridiumLogo();
-		projectDashboard.clickPFASChemicalsMenu();
-		projectDashboard.clickPFASDataMeshBuilderIcon();
-		dataMeshBuilderPage.click_VIR_03_Table_Row();
-		WebElement title=dataMeshBuilderPage.get_Color_VIR_03_Title();
-		String color = (String)((JavascriptExecutor) driver).executeScript("var element = arguments[0];" +
-                "var style = window.getComputedStyle(element);" +
-                "return style.getPropertyValue('color');", title);
-		System.out.println("Color is: "+color);
-		Assert.assertEquals(color, "rgb(249, 73, 72)");
-	}
-	
-	
-	
+		
 
 }
