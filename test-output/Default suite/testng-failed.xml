@@ -5,13 +5,12 @@
     <classes>
       <class name="com.viridium.qa.tests.TestCases">
         <methods>
-          <include name="login"/>
-          <include name="checkCarbonEmissionMenuVisible"/>
+          <include name="startExtentReporter"/>
+          <include name="setup"/>
           <include name="teardown"/>
-          <include name="checkProductProfitabilityMenuVisible"/>
-          <include name="checkPFASCHemicalsMenuVisible"/>
           <include name="openBrowserCreateProject"/>
-          <include name="checkRegulatoryReportsMenuVisible"/>
+          <include name="closeExtentReporter"/>
+          <include name="checkTitleVIR03VisibleAfterClick"/>
         </methods>
       </class> <!-- com.viridium.qa.tests.TestCases -->
     </classes>

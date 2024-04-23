@@ -17,6 +17,7 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Parameters;
 
 import com.aventstack.extentreports.ExtentReports;
+import com.viridium.qa.pages.DataMeshBuilderPage;
 import com.viridium.qa.pages.LoginPage;
 import com.viridium.qa.pages.ProjectDashboardPage;
 import com.viridium.qa.utils.ExtentReporter;
@@ -26,8 +27,10 @@ public class BaseClass {
 	public static WebDriver driver;
 	public static WebDriverWait wait;
 	Actions act;
-	public static String url="https://kb-dev-ui.azurewebsites.net/#";
+//	public static String url="https://kb-dev-ui.azurewebsites.net/#";
+	public static String url="https://preprod-vir-ui.azurewebsites.net/#/login?from=/";
 	public ProjectDashboardPage projectDashboard;
+	public DataMeshBuilderPage dataMeshBuilderPage;
 	public static String browser;
 	public static ExtentReports extentReport;
 	
@@ -73,6 +76,7 @@ public class BaseClass {
 		try {
 			driver=intializeBrowserAndOpenApplicationURL(browser_name);
 			projectDashboard= new ProjectDashboardPage(driver);
+			dataMeshBuilderPage= new DataMeshBuilderPage(driver);
 			LoginPage loginPage= new LoginPage(driver);
 			loginPage.login("mahesh.mundfane@iauro.com","MaheshM@123#");
 			

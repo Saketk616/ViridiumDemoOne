@@ -15,6 +15,9 @@ public class ProjectDashboardPage {
 	@FindBy(className="profile-img")
 	private WebElement userProfileIcon;
 	
+	@FindBy(className="logo-image")
+	private WebElement viridium_logo;
+	
 	@FindBy(xpath="//div[text()='Product profitability']")
 	private WebElement productProfitabilityMenu;
 	
@@ -26,6 +29,9 @@ public class ProjectDashboardPage {
 	
 	@FindBy(xpath="//div[text()='Regulatory reports']")
 	private WebElement regulatoryReportsMenu;
+	
+	@FindBy(xpath="//img[@alt='Data mesh builder']")
+	private WebElement dataMeshBuilderIconPFAS;
 
 	public ProjectDashboardPage(WebDriver driver) {
 
@@ -36,6 +42,11 @@ public class ProjectDashboardPage {
 	public WebElement getUserProfileIcon() {	
 		BaseClass.wait.until(ExpectedConditions.visibilityOf(userProfileIcon));
 		return userProfileIcon;
+	}
+	
+	public void clickViridiumLogo() {	
+		BaseClass.wait.until(ExpectedConditions.visibilityOf(viridium_logo));
+		viridium_logo.click();
 	}
 	
 	public WebElement getProductProfitabilityMenu() {	
@@ -56,6 +67,16 @@ public class ProjectDashboardPage {
 	public WebElement getRegulatoryReportsMenu() {	
 		BaseClass.wait.until(ExpectedConditions.visibilityOf(regulatoryReportsMenu));
 		return regulatoryReportsMenu;
+	}
+	
+	public void clickPFASChemicalsMenu() {	
+		BaseClass.wait.until(ExpectedConditions.visibilityOf(PFASChemicalsMenu));
+		PFASChemicalsMenu.click();
+	}
+	
+	public void clickPFASDataMeshBuilderIcon() {	
+		BaseClass.wait.until(ExpectedConditions.visibilityOf(dataMeshBuilderIconPFAS));
+		dataMeshBuilderIconPFAS.click();
 	}
 
 

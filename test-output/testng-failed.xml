@@ -11,27 +11,13 @@
         <methods>
           <include name="startExtentReporter"/>
           <include name="setup"/>
+          <include name="goToDashboard"/>
+          <include name="checkTitleVIR03Color"/>
           <include name="teardown"/>
-          <include name="checkPFASCHemicalsMenuVisible"/>
           <include name="openBrowserCreateProject"/>
           <include name="closeExtentReporter"/>
         </methods>
       </class> <!-- com.viridium.qa.tests.TestCases -->
     </classes>
   </test> <!-- Test1(failed) -->
-  <test thread-count="5" name="Test2(failed)">
-    <parameter name="browser_name" value="edge"/>
-    <classes>
-      <class name="com.viridium.qa.tests.TestCases">
-        <methods>
-          <include name="startExtentReporter"/>
-          <include name="setup"/>
-          <include name="teardown"/>
-          <include name="checkPFASCHemicalsMenuVisible"/>
-          <include name="openBrowserCreateProject"/>
-          <include name="closeExtentReporter"/>
-        </methods>
-      </class> <!-- com.viridium.qa.tests.TestCases -->
-    </classes>
-  </test> <!-- Test2(failed) -->
 </suite> <!-- Failed suite [Suite_demo] -->
