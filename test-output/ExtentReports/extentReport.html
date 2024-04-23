@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Viridium Automation Test Results</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">23/04/2024 08:16:33</span></a>
+<a href="#"><span class="badge badge-primary">23/04/2024 08:27:00</span></a>
 </li>
 </ul>
 </div>
@@ -87,7 +87,7 @@
           <div class="test-detail">
             <p class="name">checkTitleVIR03VisibleAfterClick Chrome</p>
             <p class="text-sm">
-              <span>8:17:10 pm</span> / <span>00:00:13:339</span>
+              <span>8:27:18 pm</span> / <span>00:00:09:434</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -96,9 +96,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">checkTitleVIR03VisibleAfterClick Chrome</h5>
-<span class='badge badge-success'>04.23.2024 8:17:10 pm</span>
-<span class='badge badge-danger'>04.23.2024 8:17:23 pm</span>
-<span class='badge badge-default'>00:00:13:339</span>
+<span class='badge badge-success'>04.23.2024 8:27:18 pm</span>
+<span class='badge badge-danger'>04.23.2024 8:27:27 pm</span>
+<span class='badge badge-default'>00:00:09:434</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -110,14 +110,14 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>8:17:10 pm</td>
+        <td>8:27:18 pm</td>
         <td>
           checkTitleVIR03VisibleAfterClick Chrome started executing
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>8:17:23 pm</td>
+        <td>8:27:27 pm</td>
         <td>
           checkTitleVIR03VisibleAfterClick Chrome got successfully executed
         </td>
@@ -134,7 +134,7 @@
           <div class="test-detail">
             <p class="name">checkTitleVIR03Color Chrome</p>
             <p class="text-sm">
-              <span>8:17:23 pm</span> / <span>00:00:03:578</span>
+              <span>8:27:27 pm</span> / <span>00:01:02:300</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -143,9 +143,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">checkTitleVIR03Color Chrome</h5>
-<span class='badge badge-success'>04.23.2024 8:17:23 pm</span>
-<span class='badge badge-danger'>04.23.2024 8:17:27 pm</span>
-<span class='badge badge-default'>00:00:03:578</span>
+<span class='badge badge-success'>04.23.2024 8:27:27 pm</span>
+<span class='badge badge-danger'>04.23.2024 8:28:30 pm</span>
+<span class='badge badge-default'>00:01:02:300</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -161,23 +161,20 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>8:17:23 pm</td>
+        <td>8:27:27 pm</td>
         <td>
           checkTitleVIR03Color Chrome started executing
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>8:17:27 pm</td>
+        <td>8:28:30 pm</td>
         <td>
-          <textarea readonly class="code-block">java.lang.AssertionError: expected [rgb(77, 160, 103)] but found [rgb(249, 73, 72)]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1577)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:655)
-	at org.testng.Assert.assertEquals(Assert.java:665)
-	at com.viridium.qa.tests.TestCases.checkTitleVIR03Color(TestCases.java:85)
+          <textarea readonly class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //div[text()='PFAS chemicals']' (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at com.viridium.qa.pages.ProjectDashboardPage.clickPFASChemicalsMenu(ProjectDashboardPage.java:73)
+	at com.viridium.qa.tests.TestCases.checkTitleVIR03Color(TestCases.java:77)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -206,15 +203,96 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()='PFAS chemicals']"}
+  (Session info: chrome=124.0.6367.61)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e586af6176ecd0932bbde5bd2153e1ea, findElement {using=xpath, value=//div[text()='PFAS chemicals']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.61, chrome: {chromedriverVersion: 124.0.6367.60 (8771130bd84f..., userDataDir: C:\Users\Iauro\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65032}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65032/devtoo..., se:cdpVersion: 124.0.6367.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e586af6176ecd0932bbde5bd2153e1ea
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy22.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:37)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
+	... 30 more
 </textarea>
           
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>8:17:27 pm</td>
+        <td>8:28:30 pm</td>
         <td>
           checkTitleVIR03Color Chrome got failed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="3"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">checkTitleVIR03Color1 Chrome</p>
+            <p class="text-sm">
+              <span>8:28:30 pm</span> / <span>00:00:04:666</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">checkTitleVIR03Color1 Chrome</h5>
+<span class='badge badge-success'>04.23.2024 8:28:30 pm</span>
+<span class='badge badge-danger'>04.23.2024 8:28:34 pm</span>
+<span class='badge badge-default'>00:00:04:666</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:28:30 pm</td>
+        <td>
+          checkTitleVIR03Color1 Chrome started executing
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:28:34 pm</td>
+        <td>
+          checkTitleVIR03Color1 Chrome got successfully executed
         </td>
       </tr>
   </tbody>
@@ -244,12 +322,12 @@
 <span class="meta">
 <span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">java.lang.AssertionError</p>
+<p class="name">org.openqa.selenium.TimeoutException</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>java.lang.AssertionError</h4>
+<h4>org.openqa.selenium.TimeoutException</h4>
 <span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -263,7 +341,7 @@
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>20:17:23 pm</td>
+<td>20:27:27 pm</td>
 <td>
 <a href="#" class="linked" test-id='2' id='2'>checkTitleVIR03Color Chrome</a>
 </td>
@@ -285,19 +363,19 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>23/04/2024 08:16:33</h3>
+<h3>23/04/2024 08:27:00</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>23/04/2024 08:17:27</h3>
+<h3>23/04/2024 08:28:35</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>1</h3>
+<h3>2</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -319,12 +397,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='50%'>
-<b>1</b> tests passed
+<div><small data-tooltip='66%'>
+<b>2</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='50%'><b>1</b> tests failed,
+<small data-tooltip='33%'><b>1</b> tests failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -342,10 +420,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='20%'><b>1</b> events passed</small></div>
+<div><small data-tooltip='28%'><b>2</b> events passed</small></div>
 <div>
-<small data-tooltip='20%'><b>1</b> events failed,
-<b data-tooltip='%'>3</b> others
+<small data-tooltip='14%'><b>1</b> events failed,
+<b data-tooltip='%'>4</b> others
 </small>
 </div>
 </div>
@@ -361,7 +439,7 @@
 </div></div>
 <script>
 var timeline = {
-"checkTitleVIR03VisibleAfterClick Chrome":13.339,"checkTitleVIR03Color Chrome":3.578
+"checkTitleVIR03VisibleAfterClick Chrome":9.434,"checkTitleVIR03Color Chrome":62.3,"checkTitleVIR03Color1 Chrome":4.666
 };
 </script>
 <div class="row">
@@ -400,7 +478,7 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 1,
+passParent: 2,
 failParent: 1,
 warningParent: 0,
 skipParent: 0,
@@ -417,11 +495,11 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 1,
+passEvents: 2,
 failEvents: 1,
 warningEvents: 0,
 skipEvents: 0,
-infoEvents: 3
+infoEvents: 4
 };
 </script>        </div>
       </div>
