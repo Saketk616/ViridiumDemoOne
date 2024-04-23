@@ -17,6 +17,7 @@
     <classes>
       <class name="com.viridium.qa.tests.TestCases"/>
     </classes>
+    
   </test> 
   -->
 </suite> <!-- Suite_demo -->
