@@ -3,17 +3,21 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+      <class name="com.viridium.qa.base.BaseClass">
+        <methods>
+          <include name="closeExtentReporter"/>
+        </methods>
+      </class> <!-- com.viridium.qa.base.BaseClass -->
       <class name="com.viridium.qa.tests.TestCases">
         <methods>
           <include name="startExtentReporter"/>
           <include name="setup"/>
           <include name="goToDashboard"/>
-          <include name="checkTitleVIR03Color"/>
           <include name="teardown"/>
+          <include name="checkTitleVIR03Color"/>
           <include name="openBrowserCreateProject"/>
           <include name="closeExtentReporter"/>
           <include name="checkTitleVIR03VisibleAfterClick"/>
-          <include name="checkTitleVIR03Color1"/>
         </methods>
       </class> <!-- com.viridium.qa.tests.TestCases -->
     </classes>

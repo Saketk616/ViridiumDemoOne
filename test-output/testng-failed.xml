@@ -12,8 +12,8 @@
           <include name="startExtentReporter"/>
           <include name="setup"/>
           <include name="goToDashboard"/>
-          <include name="teardown"/>
           <include name="checkTitleVIR03Color"/>
+          <include name="teardown"/>
           <include name="openBrowserCreateProject"/>
           <include name="closeExtentReporter"/>
         </methods>
