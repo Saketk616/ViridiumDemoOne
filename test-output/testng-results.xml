@@ -2,43 +2,39 @@
 <testng-results ignored="5" total="7" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-23T21:41:30 IST" name="Suite_demo" finished-at="2024-04-23T21:42:00 IST" duration-ms="29860">
+  <suite started-at="2024-04-24T10:19:28 IST" name="Suite_demo" finished-at="2024-04-24T10:20:03 IST" duration-ms="34982">
     <groups>
     </groups>
-    <test started-at="2024-04-23T21:41:30 IST" name="Test1" finished-at="2024-04-23T21:42:00 IST" duration-ms="29860">
+    <test started-at="2024-04-24T10:19:28 IST" name="Test1" finished-at="2024-04-24T10:20:03 IST" duration-ms="34982">
       <class name="com.viridium.qa.tests.TestCases">
-        <test-method is-config="true" signature="startExtentReporter()[pri:0, instance:com.viridium.qa.tests.TestCases@2d3379b4]" started-at="2024-04-23T21:41:30 IST" name="startExtentReporter" finished-at="2024-04-23T21:41:30 IST" duration-ms="245" status="PASS">
+        <test-method is-config="true" signature="startExtentReporter()[pri:0, instance:com.viridium.qa.tests.TestCases@2d3379b4]" started-at="2024-04-24T10:19:27 IST" name="startExtentReporter" finished-at="2024-04-24T10:19:28 IST" duration-ms="226" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startExtentReporter -->
-        <test-method is-config="true" signature="openBrowserCreateProject(java.lang.String)[pri:0, instance:com.viridium.qa.tests.TestCases@2d3379b4]" started-at="2024-04-23T21:41:30 IST" name="openBrowserCreateProject" finished-at="2024-04-23T21:41:47 IST" duration-ms="16563" status="PASS">
+        <test-method is-config="true" signature="openBrowserCreateProject(java.lang.String)[pri:0, instance:com.viridium.qa.tests.TestCases@2d3379b4]" started-at="2024-04-24T10:19:28 IST" name="openBrowserCreateProject" finished-at="2024-04-24T10:19:49 IST" duration-ms="21066" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[edge]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowserCreateProject -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.viridium.qa.tests.TestCases@2d3379b4]" started-at="2024-04-23T21:41:47 IST" name="setup" finished-at="2024-04-23T21:41:47 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.viridium.qa.tests.TestCases@2d3379b4]" started-at="2024-04-24T10:19:49 IST" name="setup" finished-at="2024-04-24T10:19:49 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="checkTitleVIR03VisibleAfterClick()[pri:6, instance:com.viridium.qa.tests.TestCases@2d3379b4]" started-at="2024-04-23T21:41:47 IST" name="checkTitleVIR03VisibleAfterClick" finished-at="2024-04-23T21:41:56 IST" duration-ms="8854" status="PASS">
+        <test-method signature="checkTitleVIR03VisibleAfterClick()[pri:6, instance:com.viridium.qa.tests.TestCases@2d3379b4]" started-at="2024-04-24T10:19:49 IST" name="checkTitleVIR03VisibleAfterClick" finished-at="2024-04-24T10:19:59 IST" duration-ms="9806" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkTitleVIR03VisibleAfterClick -->
-        <test-method is-config="true" signature="goToDashboard()[pri:0, instance:com.viridium.qa.tests.TestCases@2d3379b4]" started-at="2024-04-23T21:41:56 IST" name="goToDashboard" finished-at="2024-04-23T21:41:56 IST" duration-ms="96" status="PASS">
+        <test-method is-config="true" signature="goToDashboard()[pri:0, instance:com.viridium.qa.tests.TestCases@2d3379b4]" started-at="2024-04-24T10:19:59 IST" name="goToDashboard" finished-at="2024-04-24T10:19:59 IST" duration-ms="107" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToDashboard -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.viridium.qa.tests.TestCases@2d3379b4]" started-at="2024-04-23T21:41:56 IST" name="setup" finished-at="2024-04-23T21:41:56 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="checkTitleVIR03Color()[pri:7, instance:com.viridium.qa.tests.TestCases@2d3379b4]" started-at="2024-04-23T21:41:56 IST" name="checkTitleVIR03Color" finished-at="2024-04-23T21:41:59 IST" duration-ms="3740" status="FAIL">
+        <test-method signature="checkTitleVIR03Color()[pri:7, instance:com.viridium.qa.tests.TestCases@2d3379b4]" started-at="2024-04-24T10:19:59 IST" name="checkTitleVIR03Color" finished-at="2024-04-24T10:20:02 IST" duration-ms="3312" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [rgb(77, 160, 103)] but found [rgb(249, 73, 72)]]]>
@@ -86,15 +82,19 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkTitleVIR03Color -->
-        <test-method is-config="true" signature="goToDashboard()[pri:0, instance:com.viridium.qa.tests.TestCases@2d3379b4]" started-at="2024-04-23T21:42:00 IST" name="goToDashboard" finished-at="2024-04-23T21:42:00 IST" duration-ms="103" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.viridium.qa.tests.TestCases@2d3379b4]" started-at="2024-04-24T10:19:59 IST" name="setup" finished-at="2024-04-24T10:19:59 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="goToDashboard()[pri:0, instance:com.viridium.qa.tests.TestCases@2d3379b4]" started-at="2024-04-24T10:20:02 IST" name="goToDashboard" finished-at="2024-04-24T10:20:02 IST" duration-ms="77" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToDashboard -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.viridium.qa.tests.TestCases@2d3379b4]" started-at="2024-04-23T21:42:00 IST" name="teardown" finished-at="2024-04-23T21:42:00 IST" duration-ms="302" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.viridium.qa.tests.TestCases@2d3379b4]" started-at="2024-04-24T10:20:02 IST" name="teardown" finished-at="2024-04-24T10:20:03 IST" duration-ms="401" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="closeExtentReporter()[pri:0, instance:com.viridium.qa.tests.TestCases@2d3379b4]" started-at="2024-04-23T21:42:00 IST" name="closeExtentReporter" finished-at="2024-04-23T21:42:01 IST" duration-ms="985" status="PASS">
+        <test-method is-config="true" signature="closeExtentReporter()[pri:0, instance:com.viridium.qa.tests.TestCases@2d3379b4]" started-at="2024-04-24T10:20:03 IST" name="closeExtentReporter" finished-at="2024-04-24T10:20:04 IST" duration-ms="820" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeExtentReporter -->
