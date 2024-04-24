@@ -6,7 +6,7 @@
   </listeners>
 	
   <test thread-count="5" name="Test1">
-  <parameter name="browser_name" value="edge"/>
+  <parameter name="browser_name" value="chrome"/>
     <classes>
       <class name="com.viridium.qa.tests.TestCases"/>
     </classes>
